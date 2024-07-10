@@ -1,0 +1,7 @@
+<div class="home-content">
+  <hint-title>Introdução</hint-title>
+
+  @if (introData$ | async; as data) {
+    <div class="card" [innerText]="data.text"></div>
+  }
+</div>

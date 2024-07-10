@@ -1,0 +1,18 @@
+<div class="contact-content">
+  <hint-title>Contato</hint-title>
+
+  <div class="card">
+    <form [formGroup]="formGroup">
+      <div class="form-row">
+        <input placeholder="Nome*" formControlName="name" />
+        <input placeholder="E-mail*" formControlName="email" />
+      </div>
+      <div class="form-row">
+        <textarea placeholder="Mensagem*" rows="7" formControlName="message"></textarea>
+      </div>
+      <div class="form-row">
+        <button class="btn btn-dark" [disabled]="formGroup.invalid">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>

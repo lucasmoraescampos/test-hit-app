@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.contact-content {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      @media ($sm-up) {
+        flex-wrap: nowrap;
+      }
+
+      .btn {
+        width: 160px;
+        margin: 6px auto 0;
+      }
+    }
+  }
+}
